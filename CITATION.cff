@@ -11,7 +11,14 @@ license: MIT
 repository-code: "https://github.com/assetdaniyarov/kz219-wgs"
 version: "1.0.0"
 date-released: "2026-11-27"
-# doi: "10.5281/zenodo.XXXXXXX"   # version DOI, added after the Zenodo release
+doi: "10.5281/zenodo.24586621"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24586621"
+    description: "Version DOI of release v1.0.0"
+  - type: doi
+    value: "10.5281/zenodo.24586620"
+    description: "Concept DOI, resolves to the latest release"
 keywords:
   - whole-genome sequencing
   - population genomics

@@ -7,14 +7,13 @@
 ![annotation](https://img.shields.io/badge/ANNOVAR-v2025Mar02-666666)
 ![bioproject](https://img.shields.io/badge/BioProject-PRJNA1224597-333333)
 ![license](https://img.shields.io/badge/license-MIT-blue)
-<!-- after the Zenodo release, replace XXXXXXX with the record number:
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX) -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24586621.svg)](https://doi.org/10.5281/zenodo.24586621)
 
 Analysis code for the article
 
 > Daniyarov A. *et al.* High-coverage whole genomes of 219 Kazakhs fill a Central Asian gap
 > in human reference panels.
-> <!-- doi: 10.1038/s42003-026-XXXXX-X -->
+> <!-- doi: 10. -->
 
 <img width="6248" height="3680" alt="figure1" src="https://github.com/user-attachments/assets/ccf3be79-84bd-4835-ab30-2e1b08e0c312" />
 
@@ -228,7 +227,14 @@ see the Data availability statement of the article for access.
 ## Citation
 
 See [`CITATION.cff`](CITATION.cff). Please cite the article and, for the code, the archived
-release on Zenodo (DOI on the badge above).
+release on Zenodo:
+
+> Daniyarov, A. kz219-wgs: analysis code for "High-coverage whole genomes of 219 Kazakhs fill
+> a Central Asian gap in human reference panels". v1.0.0. Zenodo
+> https://doi.org/10.5281/zenodo.24586621 (2026).
+
+The DOI [10.5281/zenodo.24586620](https://doi.org/10.5281/zenodo.24586620) always resolves
+to the latest release.
 
 ## License
 
