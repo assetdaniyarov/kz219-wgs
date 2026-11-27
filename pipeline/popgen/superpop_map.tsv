@@ -1,0 +1,474 @@
+
+# ---------------------------------------------------------------------------
+# Explicit nation-level entries for Europe and West Asia.
+#
+# Without these, every European individual resolves through the region fallback,
+# and the two panels label the same region differently: SGDP writes
+# Region=WestEurasia -> WEA, HGDP writes region=Europe -> EUR. HGDP00887
+# (Russian) is one person and came out WEA in groupA and EUR in groupB. This is
+# not confined to the 130 individuals the two panels share: it splits every
+# European in the study by source panel, so the colour categories and the
+# superpopulation-level Fst rows of the two figures are not comparable.
+#
+# Boundary used below: EUR is Europe proper, WEA is the Caucasus, Anatolia, the
+# Levant, Arabia and Iran. Nation lookup wins over region fallback in 01, so
+# these lines close the ambiguity for both panels at once.
+#
+# Adygei is the one arguable call: HGDP files it under Europe, but it is a North
+# Caucasus population and is assigned WEA here. State that in Methods.
+# ---------------------------------------------------------------------------
+
+# ---- Europe ----
+Albanian	EUR	SGDP
+Basque	EUR	SGDP
+French_Basque	EUR	HGDP
+Bergamo	EUR	SGDP
+North_Italian	EUR	HGDP
+Bulgarian	EUR	SGDP
+Crete	EUR	SGDP
+Czech	EUR	SGDP
+English	EUR	SGDP
+Estonian	EUR	SGDP
+Finnish	EUR	SGDP
+French	EUR	SGDP + HGDP
+Greek	EUR	SGDP
+Hungarian	EUR	SGDP
+Icelandic	EUR	SGDP
+Norwegian	EUR	SGDP
+Orcadian	EUR	SGDP + HGDP
+Polish	EUR	SGDP
+Russian	EUR	SGDP + HGDP
+Saami	EUR	SGDP
+Sardinian	EUR	SGDP + HGDP
+Spanish	EUR	SGDP
+Tuscan	EUR	SGDP + HGDP
+
+# ---- West Asia, Caucasus, Levant ----
+Abkhasian	WEA	SGDP
+Adygei	WEA	SGDP + HGDP; North Caucasus, HGDP files it under Europe
+Armenian	WEA	SGDP
+Bedouin	WEA	HGDP
+BedouinB	WEA	SGDP
+Chechen	WEA	SGDP
+Druze	WEA	SGDP + HGDP
+Georgian	WEA	SGDP
+Iranian	WEA	SGDP
+Iraqi_Jew	WEA	SGDP
+Jordanian	WEA	SGDP
+Lezgin	WEA	SGDP
+North_Ossetian	WEA	SGDP
+Palestinian	WEA	SGDP + HGDP
+Samaritan	WEA	SGDP
+Turkish	WEA	SGDP
+Yemenite_Jew	WEA	SGDP
+# ---------------------------------------------------------------------------
+# Explicit entries for every 1000 Genomes Phase 3 population code.
+#
+# Generated from all_phase3.psam (SuperPop column). They exist so that 1000G
+# never depends on the region fallback: GBR came out UNMAPPED in pop_master.tsv
+# even though its SuperPop is EUR, which means the fallback is not reaching
+# these rows. Nation lookup wins over region lookup in 01, so one explicit line
+# per population removes the question rather than debugging it.
+#
+# 1000G SuperPop EUR is Europe proper, consistent with the EUR/WEA boundary used
+# for the SGDP and HGDP entries above.
+# ---------------------------------------------------------------------------
+ACB	AFR	1KG population code
+ASW	AFR	1KG population code
+BEB	SAS	1KG population code
+CDX	EAS	1KG population code
+CEU	EUR	1KG population code
+CHB	EAS	1KG population code
+CHS	EAS	1KG population code
+CLM	AMR	1KG population code
+ESN	AFR	1KG population code
+FIN	EUR	1KG population code
+GBR	EUR	1KG population code
+GIH	SAS	1KG population code
+GWD	AFR	1KG population code
+IBS	EUR	1KG population code
+ITU	SAS	1KG population code
+JPT	EAS	1KG population code
+KHV	EAS	1KG population code
+LWK	AFR	1KG population code
+MSL	AFR	1KG population code
+MXL	AMR	1KG population code
+PEL	AMR	1KG population code
+PJL	SAS	1KG population code
+PUR	AMR	1KG population code
+STU	SAS	1KG population code
+TSI	EUR	1KG population code
+YRI	AFR	1KG population code
+
+# ---------------------------------------------------------------------------
+# Explicit nation-level entries for Europe and West Asia.
+#
+# Without these, every European individual resolves through the region fallback,
+# and the two panels label the same region differently: SGDP writes
+# Region=WestEurasia -> WEA, HGDP writes region=Europe -> EUR. HGDP00887
+# (Russian) is one person and came out WEA in groupA and EUR in groupB. This is
+# not confined to the 130 individuals the two panels share: it splits every
+# European in the study by source panel, so the colour categories and the
+# superpopulation-level Fst rows of the two figures are not comparable.
+#
+# Boundary used below: EUR is Europe proper, WEA is the Caucasus, Anatolia, the
+# Levant, Arabia and Iran. Nation lookup wins over region fallback in 01, so
+# these lines close the ambiguity for both panels at once.
+#
+# Adygei is the one arguable call: HGDP files it under Europe, but it is a North
+# Caucasus population and is assigned WEA here. State that in Methods.
+# ---------------------------------------------------------------------------
+
+# ---- Europe ----
+Albanian	EUR	SGDP
+Basque	EUR	SGDP
+French_Basque	EUR	HGDP
+Bergamo	EUR	SGDP
+North_Italian	EUR	HGDP
+Bulgarian	EUR	SGDP
+Crete	EUR	SGDP
+Czech	EUR	SGDP
+English	EUR	SGDP
+Estonian	EUR	SGDP
+Finnish	EUR	SGDP
+French	EUR	SGDP + HGDP
+Greek	EUR	SGDP
+Hungarian	EUR	SGDP
+Icelandic	EUR	SGDP
+Norwegian	EUR	SGDP
+Orcadian	EUR	SGDP + HGDP
+Polish	EUR	SGDP
+Russian	EUR	SGDP + HGDP
+Saami	EUR	SGDP
+Sardinian	EUR	SGDP + HGDP
+Spanish	EUR	SGDP
+Tuscan	EUR	SGDP + HGDP
+
+# ---- West Asia, Caucasus, Levant ----
+Abkhasian	WEA	SGDP
+Adygei	WEA	SGDP + HGDP; North Caucasus, HGDP files it under Europe
+Armenian	WEA	SGDP
+Bedouin	WEA	HGDP
+BedouinB	WEA	SGDP
+Chechen	WEA	SGDP
+Druze	WEA	SGDP + HGDP
+Georgian	WEA	SGDP
+Iranian	WEA	SGDP
+Iraqi_Jew	WEA	SGDP
+Jordanian	WEA	SGDP
+Lezgin	WEA	SGDP
+North_Ossetian	WEA	SGDP
+Palestinian	WEA	SGDP + HGDP
+Samaritan	WEA	SGDP
+Turkish	WEA	SGDP
+Yemenite_Jew	WEA	SGDP
+Aari	AFR	SGDP; region Africa
+Agaw	AFR	SGDP; region Africa
+Aleut	CAS	SGDP; region CentralAsiaSiberia
+Altaian	CAS	SGDP; region CentralAsiaSiberia
+Amhara	AFR	SGDP; region Africa
+Ami	EAS	SGDP; region EastAsia
+Atayal	EAS	SGDP; region EastAsia
+Australian	OCE	SGDP; region Oceania
+Baka	AFR	SGDP; region Africa
+Bakola	AFR	SGDP; region Africa
+Balochi	SAS	SGDP; region SouthAsia
+BantuHerero	AFR	SGDP; region Africa
+BantuKenya	AFR	SGDP; region Africa
+BantuTswana	AFR	SGDP; region Africa
+Bedzan	AFR	SGDP; region Africa
+Bengali	SAS	SGDP; region SouthAsia
+Biaka	AFR	SGDP; region Africa
+Bougainville	OCE	SGDP; region Oceania
+Brahmin	SAS	SGDP; region SouthAsia
+Brahui	SAS	SGDP; region SouthAsia
+Bulala	AFR	SGDP; region Africa
+Burmese	EAS	SGDP; region EastAsia
+Burusho	SAS	SGDP; region SouthAsia
+Cambodian	EAS	SGDP; region EastAsia
+Chane	AMR	SGDP; region America
+Chipewyan	AMR	SGDP; region America
+Chukchi	CAS	SGDP; region CentralAsiaSiberia
+Cree	AMR	SGDP; region America
+Dai	EAS	SGDP; region EastAsia
+Daur	EAS	SGDP; region EastAsia
+Dinka	AFR	SGDP; region Africa
+Dusun	OCE	SGDP; region Oceania
+Elmolo	AFR	SGDP; region Africa
+Esan	AFR	SGDP; region Africa
+Eskimo_Chaplin	CAS	SGDP; region CentralAsiaSiberia
+Eskimo_Naukan	CAS	SGDP; region CentralAsiaSiberia
+Eskimo_Sireniki	CAS	SGDP; region CentralAsiaSiberia
+Even	CAS	SGDP; region CentralAsiaSiberia
+Fulani	AFR	SGDP; region Africa
+Gambian	AFR	SGDP; region Africa
+Hadza	AFR	SGDP; region Africa
+Han	EAS	SGDP; region EastAsia
+Hawaiian	OCE	SGDP; region Oceania
+Hazara	SAS	SGDP; region SouthAsia
+Hezhen	EAS	SGDP; region EastAsia
+Igbo	AFR	SGDP; region Africa
+Igorot	OCE	SGDP; region Oceania
+Iraqw	AFR	SGDP; region Africa
+Irula	SAS	SGDP; region SouthAsia
+Itelman	CAS	SGDP; region CentralAsiaSiberia
+Japanese	EAS	SGDP; region EastAsia
+Ju_hoan_North	AFR	SGDP; region Africa
+Kaba	AFR	SGDP; region Africa
+Kalash	SAS	SGDP; region SouthAsia
+Kapu	SAS	SGDP; region SouthAsia
+Karitiana	AMR	SGDP; region America
+Kashmiri_Pandit	SAS	SGDP; region SouthAsia
+Kharia	SAS	SGDP; region SouthAsia
+Khomani_San	AFR	SGDP; region Africa
+Khonda_Dora	SAS	SGDP; region SouthAsia
+Kikuyu	AFR	SGDP; region Africa
+Kinh	EAS	SGDP; region EastAsia
+Kongo	AFR	SGDP; region Africa
+Korean	EAS	SGDP; region EastAsia
+Kurumba	SAS	SGDP; region SouthAsia
+Kusunda	SAS	SGDP; region SouthAsia
+Kyrgyz	CAS	SGDP; region CentralAsiaSiberia
+Lahu	EAS	SGDP; region EastAsia
+Laka	AFR	SGDP; region Africa
+Lemande	AFR	SGDP; region Africa
+Luhya	AFR	SGDP; region Africa
+Luo	AFR	SGDP; region Africa
+Mada	AFR	SGDP; region Africa
+Madiga	SAS	SGDP; region SouthAsia
+Makrani	SAS	SGDP; region SouthAsia
+Mala	SAS	SGDP; region SouthAsia
+Mandenka	AFR	SGDP; region Africa
+Mansi	CAS	SGDP; region CentralAsiaSiberia
+Maori	OCE	SGDP; region Oceania
+Masai	AFR	SGDP; region Africa
+Mayan	AMR	SGDP; region America
+Mbuti	AFR	SGDP; region Africa
+Mende	AFR	SGDP; region Africa
+Miao	EAS	SGDP; region EastAsia
+Mixe	AMR	SGDP; region America
+Mixtec	AMR	SGDP; region America
+Mongola	CAS	SGDP; region CentralAsiaSiberia
+Mozabite	AFR	SGDP; region Africa
+Mursi	AFR	SGDP; region Africa
+Nahua	AMR	SGDP; region America
+Naxi	EAS	SGDP; region EastAsia
+Ngumba	AFR	SGDP; region Africa
+Ogiek	AFR	SGDP; region Africa
+Onge	SAS	SGDP; region SouthAsia
+Oroqen	EAS	SGDP; region EastAsia
+Papuan	OCE	SGDP; region Oceania
+Pathan	SAS	SGDP; region SouthAsia
+Piapoco	AMR	SGDP; region America
+Pima	AMR	SGDP; region America
+Punjabi	SAS	SGDP; region SouthAsia
+Quechua	AMR	SGDP; region America
+Relli	SAS	SGDP; region SouthAsia
+Rendille	AFR	SGDP; region Africa
+Saharawi	AFR	SGDP; region Africa
+Sandawe	AFR	SGDP; region Africa
+Sengwer	AFR	SGDP; region Africa
+She	EAS	SGDP; region EastAsia
+Sherpa	SAS	SGDP; region SouthAsia
+Sindhi	SAS	SGDP; region SouthAsia
+Somali	AFR	SGDP; region Africa
+Surui	AMR	SGDP; region America
+Tajik	WEA	SGDP; region WestEurasia
+Thai	EAS	SGDP; region EastAsia
+Tibetan	SAS	SGDP; region SouthAsia
+Tikar_South	AFR	SGDP; region Africa
+Tlingit	CAS	SGDP; region CentralAsiaSiberia
+Tu	EAS	SGDP; region EastAsia
+Tubalar	CAS	SGDP; region CentralAsiaSiberia
+Tujia	EAS	SGDP; region EastAsia
+Ulchi	CAS	SGDP; region CentralAsiaSiberia
+Uygur	EAS	SGDP; region EastAsia
+Xibo	EAS	SGDP; region EastAsia
+Yadava	SAS	SGDP; region SouthAsia
+Yakut	CAS	SGDP; region CentralAsiaSiberia
+Yi	EAS	SGDP; region EastAsia
+Yoruba	AFR	SGDP; region Africa
+Zapotec	AMR	SGDP; region America
+Tajik	CAS	AADR; SGDP files Tajik under WestEurasia, this line overrides that
+
+# ---------------------------------------------------------------------------
+# RESTORED BLOCK - append last, it must win.
+#
+# The AADR section had gone missing from superpop_map.tsv: 16 of the 21
+# inclusion-list groups resolved to nothing, and Hazara had been taken over by
+# the SGDP region default (SouthAsia -> SAS) instead of CAS. Every HGDP
+# population is listed too, because HGDP lumps East, Central and South Asia into
+# one region called 'Asia'; the split is made per population from the
+# geographic_origin column and written out, rather than left to a region default
+# with overrides that can be lost the same way again.
+#
+# 01 reads this file into an array and the last line with a given key wins, so
+# appending this block at the end restores the intended assignments regardless
+# of what precedes it.
+# ---------------------------------------------------------------------------
+
+# ---- AADR inclusion list + cohort fallback ---------------------------------
+Kazakh.SG	CAS	AADR, independent Kazakh sample on 1240K; kept apart from the KAZ cohort
+Kyrgyz_Kyrgyzstan	CAS	AADR
+Uzbek	CAS	AADR
+Turkmen	CAS	AADR
+Karakalpak	CAS	AADR
+Tajik	CAS	AADR; SGDP files Tajik under WestEurasia, this overrides that
+Uyghur	CAS	AADR spelling; HGDP writes Uygur
+Hazara	CAS	AADR + HGDP; SGDP files Hazara under SouthAsia, this overrides that
+Dungan	CAS	AADR, East Asian ancestry but Central Asian resident population
+Bashkir	CAS	AADR, Turkic Volga-Urals
+Tatar_Volga	CAS	AADR, Turkic Volga-Urals
+Tatar_Tomsk	CAS	AADR, Siberian Tatar
+Tatar_Irtysh_Barabinsk	CAS	AADR, Siberian Tatar
+Kalmyk	CAS	AADR, Mongolic, Caspian steppe
+Mari	WEA	AADR, Volga-Finnic
+Buryat	CAS	AADR
+Teleut	CAS	AADR
+Koryak	CAS	AADR
+Altaian	CAS	AADR, consistent with the SGDP CentralAsiaSiberia assignment
+Finland_Saami_Modern	EUR	AADR
+Kazakh	KAZ	fallback label written by 01_prepare.sh for the cohort
+
+# ---- HGDP, every population explicit ---------------------------------------
+Adygei	WEA	HGDP, Caucasus / Levant
+Balochi	SAS	HGDP Asia, South Asian (Pakistan)
+Bantu	AFR	HGDP, Africa
+Bedouin	WEA	HGDP, Caucasus / Levant
+Biaka_HG	AFR	HGDP, Africa
+Brahui	SAS	HGDP Asia, South Asian (Pakistan)
+Burusho	SAS	HGDP Asia, South Asian (Pakistan)
+Cambodians	EAS	HGDP Asia, East Asian (Cambodia)
+Colombians	AMR	HGDP, America
+Dai	EAS	HGDP Asia, East Asian (China)
+Daur	CAS	HGDP Asia, Central Asian / Siberian (China)
+Druze	WEA	HGDP, Caucasus / Levant
+French	EUR	HGDP, Europe
+French_Basque	EUR	HGDP, Europe
+Han	EAS	HGDP Asia, East Asian (China)
+Hezhen	CAS	HGDP Asia, Central Asian / Siberian (China)
+Japanese	EAS	HGDP Asia, East Asian (Japan)
+Kalash	SAS	HGDP Asia, South Asian (Pakistan)
+Karitiana	AMR	HGDP, America
+Lahu	EAS	HGDP Asia, East Asian (China)
+Makrani	SAS	HGDP Asia, South Asian (Pakistan)
+Mandenka	AFR	HGDP, Africa
+Maya	AMR	HGDP, America
+Mbuti_HG	AFR	HGDP, Africa
+Miaozu	EAS	HGDP Asia, East Asian (China)
+Mongola	CAS	HGDP Asia, Central Asian / Siberian (China)
+Mozabite	AFR	HGDP, Africa
+NAN_Melanesian	OCE	HGDP, Oceania
+Naxi	EAS	HGDP Asia, East Asian (China)
+North_Italian	EUR	HGDP, Europe
+Orcadian	EUR	HGDP, Europe
+Oroqen	CAS	HGDP Asia, Central Asian / Siberian (China)
+Palestinian	WEA	HGDP, Caucasus / Levant
+Papuan	OCE	HGDP, Oceania
+Pathan	SAS	HGDP Asia, South Asian (Pakistan)
+Pima	AMR	HGDP, America
+Russian	EUR	HGDP, Europe
+San	AFR	HGDP, Africa
+Sardinian	EUR	HGDP, Europe
+She	EAS	HGDP Asia, East Asian (China)
+Sindhi	SAS	HGDP Asia, South Asian (Pakistan)
+Surui	AMR	HGDP, America
+Tu	CAS	HGDP Asia, Central Asian / Siberian (China)
+Tujia	EAS	HGDP Asia, East Asian (China)
+Tuscan	EUR	HGDP, Europe
+Uygur	CAS	HGDP Asia, Central Asian / Siberian (China)
+Xibo	CAS	HGDP Asia, Central Asian / Siberian (China)
+Yakut	CAS	HGDP Asia, Central Asian / Siberian (Siberia)
+Yizu	EAS	HGDP Asia, East Asian (China)
+Yoruba	AFR	HGDP, Africa
+
+# ---------------------------------------------------------------------------
+# RESTORED BLOCK - append last, it must win.
+#
+# The AADR section had gone missing from superpop_map.tsv: 16 of the 21
+# inclusion-list groups resolved to nothing, and Hazara had been taken over by
+# the SGDP region default (SouthAsia -> SAS) instead of CAS. Every HGDP
+# population is listed too, because HGDP lumps East, Central and South Asia into
+# one region called 'Asia'; the split is made per population from the
+# geographic_origin column and written out, rather than left to a region default
+# with overrides that can be lost the same way again.
+#
+# 01 reads this file into an array and the last line with a given key wins, so
+# appending this block at the end restores the intended assignments regardless
+# of what precedes it.
+# ---------------------------------------------------------------------------
+
+# ---- AADR inclusion list + cohort fallback ---------------------------------
+Kazakh.SG	CAS	AADR, independent Kazakh sample on 1240K; kept apart from the KAZ cohort
+Kyrgyz_Kyrgyzstan	CAS	AADR
+Uzbek	CAS	AADR
+Turkmen	CAS	AADR
+Karakalpak	CAS	AADR
+Tajik	CAS	AADR; SGDP files Tajik under WestEurasia, this overrides that
+Uyghur	CAS	AADR spelling; HGDP writes Uygur
+Hazara	CAS	AADR + HGDP; SGDP files Hazara under SouthAsia, this overrides that
+Dungan	CAS	AADR, East Asian ancestry but Central Asian resident population
+Bashkir	CAS	AADR, Turkic Volga-Urals
+Tatar_Volga	CAS	AADR, Turkic Volga-Urals
+Tatar_Tomsk	CAS	AADR, Siberian Tatar
+Tatar_Irtysh_Barabinsk	CAS	AADR, Siberian Tatar
+Kalmyk	CAS	AADR, Mongolic, Caspian steppe
+Mari	WEA	AADR, Volga-Finnic
+Buryat	CAS	AADR
+Teleut	CAS	AADR
+Koryak	CAS	AADR
+Altaian	CAS	AADR, consistent with the SGDP CentralAsiaSiberia assignment
+Finland_Saami_Modern	EUR	AADR
+Kazakh	KAZ	fallback label written by 01_prepare.sh for the cohort
+
+# ---- HGDP, every population explicit ---------------------------------------
+Adygei	WEA	HGDP, Caucasus / Levant
+Balochi	SAS	HGDP Asia, South Asian (Pakistan)
+Bantu	AFR	HGDP, Africa
+Bedouin	WEA	HGDP, Caucasus / Levant
+Biaka_HG	AFR	HGDP, Africa
+Brahui	SAS	HGDP Asia, South Asian (Pakistan)
+Burusho	SAS	HGDP Asia, South Asian (Pakistan)
+Cambodians	EAS	HGDP Asia, East Asian (Cambodia)
+Colombians	AMR	HGDP, America
+Dai	EAS	HGDP Asia, East Asian (China)
+Daur	CAS	HGDP Asia, Central Asian / Siberian (China)
+Druze	WEA	HGDP, Caucasus / Levant
+French	EUR	HGDP, Europe
+French_Basque	EUR	HGDP, Europe
+Han	EAS	HGDP Asia, East Asian (China)
+Hezhen	CAS	HGDP Asia, Central Asian / Siberian (China)
+Japanese	EAS	HGDP Asia, East Asian (Japan)
+Kalash	SAS	HGDP Asia, South Asian (Pakistan)
+Karitiana	AMR	HGDP, America
+Lahu	EAS	HGDP Asia, East Asian (China)
+Makrani	SAS	HGDP Asia, South Asian (Pakistan)
+Mandenka	AFR	HGDP, Africa
+Maya	AMR	HGDP, America
+Mbuti_HG	AFR	HGDP, Africa
+Miaozu	EAS	HGDP Asia, East Asian (China)
+Mongola	CAS	HGDP Asia, Central Asian / Siberian (China)
+Mozabite	AFR	HGDP, Africa
+NAN_Melanesian	OCE	HGDP, Oceania
+Naxi	EAS	HGDP Asia, East Asian (China)
+North_Italian	EUR	HGDP, Europe
+Orcadian	EUR	HGDP, Europe
+Oroqen	CAS	HGDP Asia, Central Asian / Siberian (China)
+Palestinian	WEA	HGDP, Caucasus / Levant
+Papuan	OCE	HGDP, Oceania
+Pathan	SAS	HGDP Asia, South Asian (Pakistan)
+Pima	AMR	HGDP, America
+Russian	EUR	HGDP, Europe
+San	AFR	HGDP, Africa
+Sardinian	EUR	HGDP, Europe
+She	EAS	HGDP Asia, East Asian (China)
+Sindhi	SAS	HGDP Asia, South Asian (Pakistan)
+Surui	AMR	HGDP, America
+Tu	CAS	HGDP Asia, Central Asian / Siberian (China)
+Tujia	EAS	HGDP Asia, East Asian (China)
+Tuscan	EUR	HGDP, Europe
+Uygur	CAS	HGDP Asia, Central Asian / Siberian (China)
+Xibo	CAS	HGDP Asia, Central Asian / Siberian (China)
+Yakut	CAS	HGDP Asia, Central Asian / Siberian (Siberia)
+Yizu	EAS	HGDP Asia, East Asian (China)
+Yoruba	AFR	HGDP, Africa

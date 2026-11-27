@@ -1,0 +1,45 @@
+# results/meta/panel_exclude_iids.txt
+#
+# Format: <panel><TAB><IID>, one per line, # for comments.
+# Panel is the short name used in 01_prepare.sh: kz, kg, sgdp, hgdp, aadr.
+# The panel column matters: several of these IIDs exist in two panels and only
+# one copy is being removed.
+#
+# --- SGDP genotypes with no metadata row at all -----------------------------
+# Present in cteam_extended.v4.maf0.1perc.fam but in no SGDP metadata release:
+# not under Illumina_ID, Sample_ID, Sample_ID(Aliases) or SGDP_ID, and the
+# strings appear nowhere in either file. Without a row there is no population
+# label and 01 aborts rather than invent one. Their ID neighbours are HGDP01345
+# (Naxi, EastAsia) and IHW9193 (Australian, Oceania), which is suggestive and is
+# not evidence about these two individuals.
+sgdp	HGDP01344
+sgdp	IHW9195
+
+# --- individuals present in both 1000G Phase 3 and SGDP ---------------------
+# The same genome under the same IID in two panels that are both merged into
+# groupA, so it would enter the merge twice, break every join keyed on IID, and
+# leave KING to clean up afterwards. Retained from 1000G, which supplies the
+# population context these individuals are there for, and removed from SGDP.
+sgdp	HG00126
+sgdp	HG00128
+sgdp	HG00174
+sgdp	HG00190
+sgdp	HG00360
+sgdp	HG01503
+sgdp	HG01504
+sgdp	HG01600
+sgdp	HG01846
+sgdp	HG02464
+sgdp	HG02494
+sgdp	HG02574
+sgdp	HG02724
+sgdp	HG02783
+sgdp	HG02790
+sgdp	HG02943
+sgdp	HG03006
+sgdp	HG03007
+sgdp	HG03078
+sgdp	HG03085
+sgdp	HG03100
+sgdp	NA18940
+sgdp	NA19023

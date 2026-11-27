@@ -1,0 +1,17 @@
+name: kz219
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - numpy>=1.24
+  - pandas>=2.0
+  - matplotlib>=3.7
+  - scipy>=1.10
+  - openpyxl>=3.1
+  - python-docx>=1.1
+  - pillow>=10.0
+  - tqdm>=4.66
+  - pyarrow>=14.0
+  - jupyter
+  - ipykernel
+  - nbconvert

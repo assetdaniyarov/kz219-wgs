@@ -1,0 +1,57 @@
+# ============================================================================
+# results/meta/aadr_keep_groups.txt
+#
+# AADR Group_Name values retained in groupB. One per line, # for comments.
+# Every name below was checked against the actual .janno.
+#
+# Scope. HGDP already supplies the continental anchors for groupB — Han,
+# Japanese, Daur, Hezhen, Oroqen, Xibo, Tu, Yakut, Hazara, Uygur, the Pakistani
+# populations, French, Sardinian, Basque, Orcadian, Russian, Adygei, Druze,
+# Bedouin, Palestinian. Adding AADR copies of the same populations would only
+# duplicate individuals that KING then removes, while shrinking the three-way
+# marker intersection. What AADR contributes that nothing else does is the .SG
+# Central Asian and Siberian set below.
+#
+# Kazakh.SG is an independent Kazakh sample genotyped on 1240K. It is the
+# direct external comparison for this cohort and the reason groupB is worth
+# building at all.
+#
+# Ignore_* is AADR's own do-not-use flag and *.REF are reference-sequence
+# placeholders rather than people; neither appears here.
+# ============================================================================
+
+# ---- Kazakh, external comparison -------------------------------------------
+Kazakh.SG
+
+# ---- Central Asia -----------------------------------------------------------
+Kyrgyz_Kyrgyzstan.SG
+Uzbek.SG
+Turkmen.SG
+Karakalpak.SG
+Tajik.SG
+Tajik_o.SG
+Uyghur.SG
+Hazara.SG
+Dungan.SG
+
+# ---- Volga-Urals and western steppe -----------------------------------------
+# Bashkir and the Tatar groups are Turkic populations of the Volga-Urals, and
+# Kalmyk is Mongolic but resident in the Caspian steppe. All four are assigned
+# to CAS in superpop_map.tsv on linguistic and demographic grounds rather than
+# strict geography; Mari is Volga-Finnic and goes to WEA. Those two calls are
+# arguable and belong in Methods explicitly.
+Bashkir.SG
+Tatar_Volga.SG
+Tatar_Tomsk.SG
+Tatar_Irtysh_Barabinsk.SG
+Kalmyk.SG
+Mari.SG
+
+# ---- Siberia ----------------------------------------------------------------
+Buryat.SG
+Teleut.SG
+Koryak.SG
+Altaian_o.SG
+
+# ---- northern Europe --------------------------------------------------------
+Finland_Saami_Modern.SG
