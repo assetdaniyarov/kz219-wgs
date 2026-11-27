@@ -1,0 +1,47 @@
+# ---- data: individual-level genotypes and participant metadata are NOT public ----
+data/*
+!data/README.md
+work/
+results/
+
+# individual-level or identifying files, wherever they are
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+*.bam
+*.bai
+*.cram
+*.crai
+*.bed
+*.bim
+*.fam
+*.pgen
+*.pvar
+*.psam
+*metadata*.xlsx
+*metada*.csv
+*tribes*.tsv
+*.annotated*.txt
+
+# generated figures and tables
+*.tiff
+*.tif
+*.png
+*.pdf
+*.xlsx
+*.docx
+!docs/**/*.png
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.pkl
+*.parquet
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+executed/
