@@ -119,7 +119,7 @@ which the analysis was run.
 |---|---|---|---|
 | 1 | `pipeline/01_dragen_per_sample.sh` | DRAGEN v3.10.16, hg19 hash table v8 | BAM, gVCF, CNV, SV, ROH and QC metrics per sample (input of notebook 01) |
 | 2 | `pipeline/02_dragen_joint_genotyping.sh` | DRAGEN v4.3.6 iterative gVCF genotyper | multi-sample VCF of 219 genomes |
-| 3 | `pipeline/03_annovar_nf.sh` | [annovar-nf](https://github.com/assetdaniyarov/annovar-nf), ANNOVAR v2025Mar02 | annotated callset (input of notebook 03) |
+| 3 | `pipeline/03_annovar_nf.sh` | ANNOVAR v2025Mar02 | annotated callset (input of notebook 03) |
 | 4 | `pipeline/04_mtdna_haplogroups.py` | samtools v1.21, BWA-MEM v0.7.12-r1039, mutserve v2.0.1, HaploGrep 3 v3.2.2 (phylotree-fu-rcrs 1.2) | `kz_219_mtdna_haplogroups.tsv` (input of notebook 05) |
 | 5 | `pipeline/05_chrY_ylt.sh` | Y-LineageTracker v1.3.0, `classify -b 37` | `kz_219_ylt.*` (input of notebook 06) |
 | 6 | `pipeline/popgen/run_all.sh` | PLINK v1.9.0-b.8, PLINK v2.00a5.12, ADMIXTURE v1.3.0 | `data/popgen/results` (input of notebook 02) |
