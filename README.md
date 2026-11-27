@@ -16,7 +16,7 @@ Analysis code for the article
 > in human reference panels. *Communications Biology* (2026).
 > <!-- doi: 10.1038/s42003-026-XXXXX-X -->
 
-<img width="6248" height="3680" alt="figure1" src="https://github.com/user-attachments/assets/24bf9a7d-b62b-44cc-8c7e-33a2476f38f6" />
+<img width="6248" height="3680" alt="figure1" src="https://github.com/user-attachments/assets/ccf3be79-84bd-4835-ab30-2e1b08e0c312" />
 
 The upstream scripts in [`pipeline/`](pipeline) record the commands, software versions,
 parameters and random seeds that produced the notebook inputs (DRAGEN, ANNOVAR, PLINK,
