@@ -1,0 +1,34 @@
+{
+  "upload_type": "software",
+  "title": "kz219-wgs: analysis code for “High-coverage whole genomes of 219 Kazakhs fill a Central Asian gap in human reference panels”",
+  "version": "1.0.0",
+  "description": "<p>Analysis code for the article “High-coverage whole genomes of 219 Kazakhs fill a Central Asian gap in human reference panels” (Communications Biology, 2026).</p><p>Upstream scripts record the commands, software versions, parameters and random seeds used for alignment and variant calling (Illumina DRAGEN v3.10.16; joint genotyping DRAGEN v4.3.6; GRCh37/hg19), annotation (ANNOVAR v2025Mar02), population-genetic analyses (PLINK v1.9.0-b.8 and v2.00a5.12, ADMIXTURE v1.3.0), mitochondrial haplogroups (samtools, BWA-MEM, mutserve, HaploGrep 3) and Y-chromosome haplogroups (Y-LineageTracker v1.3.0). Six Jupyter notebooks produce the figures, tables and Supplementary Data of the article from those outputs.</p><p>Individual-level genotypes and participant metadata are not included. Raw reads are deposited in NCBI SRA under BioProject PRJNA1224597.</p>",
+  "creators": [
+    {
+      "name": "Daniyarov, Asset",
+      "affiliation": "Center for Life Sciences, National Laboratory Astana, Nazarbayev University, Astana, Kazakhstan; Institute of Natural Sciences, Department of General Biology and Genomics, L.N. Gumilyov Eurasian National University, Astana, Kazakhstan",
+      "orcid": "0000-0003-3886-718X"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "whole-genome sequencing",
+    "population genomics",
+    "Kazakh",
+    "Central Asia",
+    "reference panels",
+    "pharmacogenomics",
+    "mitochondrial DNA",
+    "Y chromosome"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1224597",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Funded by the Science Committee of the Ministry of Science and Higher Education of the Republic of Kazakhstan (programme-targeted funding BR27199879, BR24993023, BR24992841; research grant AP23490594) and Nazarbayev University (CRP grant 211123CRP1608)."
+}
